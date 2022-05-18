@@ -1,3 +1,14 @@
 {
-  "item.relsfarmcraft.strawberry": "Strawberry"
+  "itemGroup.relsfarmcraft.relsfarmcraftgroup":  "Rel's Farm Craft",
+
+  "item.relsfarmcraft.strawberry": "Strawberry",
+  "item.relsfarmcraft.grapes": "Grapes",
+  "item.relsfarmcraft.onion": "Onion",
+
+
+  "item.relsfarmcraft.onion_seeds": "Onion Seeds",
+
+
+  "block.relsfarmcraft.onion_crop": "Onion Crop",
+  "block.relsfarmcraft.strawberry_bush": "Strawberry Bush"
 }
