@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "berries=false": {
+      "model": "relsfarmcraft:block/crops/grape_vines_plant"
+    },
+    "berries=true": {
+      "model": "relsfarmcraft:block/crops/grape_vines_plant_fruiting"
+    }
+  }
+}

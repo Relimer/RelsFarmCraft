@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "relsfarmcraft:block/crops/grape_vines_plant"
+  }
+}
