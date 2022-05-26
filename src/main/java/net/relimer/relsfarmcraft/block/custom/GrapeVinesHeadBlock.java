@@ -91,7 +91,9 @@ public class GrapeVinesHeadBlock extends AbstractPlantStemBlock implements Ferti
 
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        world.setBlockState(pos, state.with(BERRIES, true), Block.NOTIFY_LISTENERS);
+        if(Math.random() < 0.5) {
+            world.setBlockState(pos, state.with(BERRIES, true), Block.NOTIFY_LISTENERS);
+        }
     }
 }
 

@@ -71,7 +71,9 @@ public class GrapeVinesBodyBlock extends AbstractPlantBlock implements Fertiliza
 
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        if(Math.random() < 0.5) {
             world.setBlockState(pos, state.with(BERRIES, true), Block.NOTIFY_LISTENERS);
+        }
     }
 
 }
