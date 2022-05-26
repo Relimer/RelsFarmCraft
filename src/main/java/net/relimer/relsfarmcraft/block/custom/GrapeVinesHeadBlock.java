@@ -83,5 +83,15 @@ public class GrapeVinesHeadBlock extends AbstractPlantStemBlock implements Ferti
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
         world.setBlockState(pos, (BlockState)state.with(BERRIES, true), Block.NOTIFY_LISTENERS);
     }
+
+    @Override
+    public boolean hasRandomTicks(BlockState state) {
+        return true;
+    }
+
+    @Override
+    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        world.setBlockState(pos, state.with(BERRIES, true), Block.NOTIFY_LISTENERS);
+    }
 }
 

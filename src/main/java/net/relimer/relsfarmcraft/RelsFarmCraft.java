@@ -1,8 +1,14 @@
 package net.relimer.relsfarmcraft;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.item.Items;
 import net.relimer.relsfarmcraft.block.ModBlocks;
+import net.relimer.relsfarmcraft.block.entity.ModBlockEntities;
+import net.relimer.relsfarmcraft.item.ModFuelItems;
 import net.relimer.relsfarmcraft.item.ModItems;
+import net.relimer.relsfarmcraft.recipe.ModRecipes;
+import net.relimer.relsfarmcraft.screen.slot.ModScreenHandlers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +19,13 @@ public class RelsFarmCraft implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+
 		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerAllBlockEntities();
+
+		ModRecipes.registerRecipes();
+
+		ModScreenHandlers.registerAllScreenHandlers();
+		ModFuelItems.registerFuelItems();
 	}
 }

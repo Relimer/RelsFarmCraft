@@ -1,0 +1,14 @@
+{
+  "type": "relsfarmcraft:seed_maker",
+  "ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "relsfarmcraft:grapes"
+    }
+  ],
+  "output": {
+    "item": "relsfarmcraft:grape_seeds"
+  }
+}

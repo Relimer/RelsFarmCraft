@@ -20,10 +20,6 @@
                 }
               ],
               "name": "relsfarmcraft:onion"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "relsfarmcraft:onion_seeds"
             }
           ]
         }
@@ -46,7 +42,7 @@
               }
             }
           ],
-          "name": "relsfarmcraft:onion_seeds"
+          "name": "relsfarmcraft:onion"
         }
       ],
       "conditions": [

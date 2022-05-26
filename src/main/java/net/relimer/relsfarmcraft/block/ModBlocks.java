@@ -10,10 +10,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.relimer.relsfarmcraft.RelsFarmCraft;
-import net.relimer.relsfarmcraft.block.custom.GrapeVinesBodyBlock;
-import net.relimer.relsfarmcraft.block.custom.GrapeVinesHeadBlock;
-import net.relimer.relsfarmcraft.block.custom.OnionCropBlock;
-import net.relimer.relsfarmcraft.block.custom.StrawberryBushBlock;
+import net.relimer.relsfarmcraft.block.custom.*;
 import net.relimer.relsfarmcraft.item.ModItemGroup;
 
 public class ModBlocks {
@@ -25,7 +22,8 @@ public class ModBlocks {
             new GrapeVinesHeadBlock(AbstractBlock.Settings.of(Material.PLANT).ticksRandomly().noCollision().breakInstantly().sounds(BlockSoundGroup.CAVE_VINES)), ModItemGroup.RELSFARMCRAFTGROUP);
     public static final Block GRAPE_VINES_PLANT = registerBlockWithoutItem("grape_vines_plant",
             new GrapeVinesBodyBlock(AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.CAVE_VINES)), ModItemGroup.RELSFARMCRAFTGROUP);
-
+    public static final Block SEED_MAKER = registerBlock("seed_maker",
+            new SeedMakerBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().sounds(BlockSoundGroup.COPPER).strength(2f, 4f).requiresTool()), ModItemGroup.RELSFARMCRAFTGROUP);
 
     private  static  Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

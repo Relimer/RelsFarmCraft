@@ -3,6 +3,7 @@ package net.relimer.relsfarmcraft.block.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
@@ -37,6 +38,11 @@ public class OnionCropBlock extends CropBlock {
     @Override
     protected ItemConvertible getSeedsItem() {
         return ModItems.ONION_SEEDS;
+    }
+
+    @Override
+    public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
+        return new ItemStack(ModItems.ONION);
     }
 
     @Override

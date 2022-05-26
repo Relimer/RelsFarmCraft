@@ -6,9 +6,16 @@
   "item.relsfarmcraft.onion": "Onion",
 
 
+  "item.relsfarmcraft.strawberry_seeds": "Strawberry Seeds",
+  "item.relsfarmcraft.grape_seeds": "Grape Seeds",
   "item.relsfarmcraft.onion_seeds": "Onion Seeds",
 
 
+  "block.relsfarmcraft.strawberry_bush": "Strawberry Bush",
+  "block.relsfarmcraft.grape_vines": "Grape Vines",
   "block.relsfarmcraft.onion_crop": "Onion Crop",
-  "block.relsfarmcraft.strawberry_bush": "Strawberry Bush"
+  "block.relsfarmcraft.grape_vines_plant": "Grape Vines Plant",
+
+
+  "block.relsfarmcraft.seed_maker": "Seed Maker"
 }
