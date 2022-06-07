@@ -3,19 +3,44 @@
 
   "item.relsfarmcraft.strawberry": "Strawberry",
   "item.relsfarmcraft.grapes": "Grapes",
-  "item.relsfarmcraft.onion": "Onion",
+  "item.relsfarmcraft.fermented_grapes": "Fermented Grapes",
 
 
   "item.relsfarmcraft.strawberry_seeds": "Strawberry Seeds",
   "item.relsfarmcraft.grape_seeds": "Grape Seeds",
-  "item.relsfarmcraft.onion_seeds": "Onion Seeds",
+
+  "item.relsfarmcraft.dried_grapes": "Dried Grapes",
+  "item.relsfarmcraft.grape_jam": "Grape Jam",
+  "item.relsfarmcraft.spiced_grape_jam": "Spiced Grape Jam",
+  "item.relsfarmcraft.grape_jam_tart": "Grape Jam Tart",
+  "item.relsfarmcraft.grape_pie": "Grape Pie",
+  "item.relsfarmcraft.grape_sorbet": "Grape Sorbet",
+  "item.relsfarmcraft.grape_doughnut": "Grape Doughnut",
+  "item.relsfarmcraft.dried_grape_cookie": "Dried Grape Cookie",
+  "item.relsfarmcraft.grape_compote": "Grape Compote",
+  "item.relsfarmcraft.honeyed_grapes": "Honeyed Grapes",
+  "item.relsfarmcraft.grape_jelly": "Grape Jelly",
+
+  "item.relsfarmcraft.grape_juice": "Grape Juice",
+  "item.relsfarmcraft.grape_wine": "Grape Wine",
+  "item.relsfarmcraft.spiced_grape_wine": "Spiced Grape Wine",
+  "item.relsfarmcraft.grape_tea": "Grape Tea",
+
+  "item.relsfarmcraft.grape_tea_bag": "Grape Tea Bag",
+  "item.relsfarmcraft.glass_jam_jar": "Glass Jam Jar",
+
+
+  "block.relsfarmcraft.grape_cake": "Grape Cake",
+
 
 
   "block.relsfarmcraft.strawberry_bush": "Strawberry Bush",
   "block.relsfarmcraft.grape_vines": "Grape Vines",
-  "block.relsfarmcraft.onion_crop": "Onion Crop",
   "block.relsfarmcraft.grape_vines_plant": "Grape Vines Plant",
 
 
-  "block.relsfarmcraft.seed_maker": "Seed Maker"
+  "block.relsfarmcraft.seed_maker": "Seed Maker",
+  "block.relsfarmcraft.grape_jelly_block": "Grape Jelly Block",
+
+  "effect.relsfarmcraft.weakness_immunity": "Weakness Immunity"
 }

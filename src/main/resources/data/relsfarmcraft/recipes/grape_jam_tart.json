@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "wgw",
+    " w "
+  ],
+  "key": {
+    "g": {
+      "item": "relsfarmcraft:grape_jam"
+    },
+    "w": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "relsfarmcraft:grape_jam_tart"
+  }
+}

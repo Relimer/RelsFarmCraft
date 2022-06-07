@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mgm",
+    "ses",
+    "www"
+  ],
+  "key": {
+    "g": {
+      "item": "relsfarmcraft:grapes"
+    },
+    "m": {
+      "item": "minecraft:milk_bucket"
+    },
+    "s": {
+      "item": "minecraft:sugar"
+    },
+    "e": {
+      "item": "minecraft:egg"
+    },
+    "w": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "relsfarmcraft:grape_cake"
+  }
+}

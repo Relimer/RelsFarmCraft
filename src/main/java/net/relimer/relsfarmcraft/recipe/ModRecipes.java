@@ -1,6 +1,5 @@
 package net.relimer.relsfarmcraft.recipe;
 
-
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.relimer.relsfarmcraft.RelsFarmCraft;

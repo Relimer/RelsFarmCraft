@@ -1,6 +1,0 @@
-{
-  "parent": "block/crop",
-  "textures": {
-    "crop": "relsfarmcraft:block/crops/onion_stage3"
-  }
-}

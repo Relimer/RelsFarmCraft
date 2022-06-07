@@ -1,10 +1,9 @@
 package net.relimer.relsfarmcraft;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.item.Items;
 import net.relimer.relsfarmcraft.block.ModBlocks;
 import net.relimer.relsfarmcraft.block.entity.ModBlockEntities;
+import net.relimer.relsfarmcraft.effect.ModEffects;
 import net.relimer.relsfarmcraft.item.ModFuelItems;
 import net.relimer.relsfarmcraft.item.ModItems;
 import net.relimer.relsfarmcraft.recipe.ModRecipes;
@@ -18,6 +17,8 @@ public class RelsFarmCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModEffects.registerEffects();
+
 		ModItems.registerModItems();
 
 		ModBlocks.registerModBlocks();
@@ -27,5 +28,6 @@ public class RelsFarmCraft implements ModInitializer {
 
 		ModScreenHandlers.registerAllScreenHandlers();
 		ModFuelItems.registerFuelItems();
+
 	}
 }

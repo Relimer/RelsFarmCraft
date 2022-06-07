@@ -1,6 +1,5 @@
 package net.relimer.relsfarmcraft.block.entity;
 
-import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -8,8 +7,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
@@ -27,7 +24,6 @@ import net.relimer.relsfarmcraft.screen.slot.ModWaterSlot;
 import net.relimer.relsfarmcraft.screen.slot.SeedMakerScreenHandler;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Map;
 import java.util.Optional;
 
 public class SeedMakerBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
@@ -131,7 +127,7 @@ public class SeedMakerBlockEntity extends BlockEntity implements NamedScreenHand
     }
 
     private static boolean hasFuelInFuelSlot(SeedMakerBlockEntity entity) {
-        if(SeedMakerBlockEntity.canUseAsFuel(entity.getStack(0))) {
+        if(ModWaterSlot.canUseAsFuel(entity.getStack(0))) {
             return !entity.getStack(0).isEmpty();
         }
         return false;
@@ -188,16 +184,5 @@ public class SeedMakerBlockEntity extends BlockEntity implements NamedScreenHand
         return inventory.getStack(3).getMaxCount() > inventory.getStack(3).getCount();
     }
 
-    public static Map<Item, Integer> createFuelTimeMap() {
-        Map<Item, Integer> map = Maps.newLinkedHashMap();
-        addFuel(map, Items.WATER_BUCKET, 300);
-        return map;
-    }
-    private static void addFuel(Map<Item, Integer> fuelTimes, ItemConvertible item, int fuelTime) {
-        Item item2 = item.asItem();
-        fuelTimes.put(item2, fuelTime);
-    }
-    public static boolean canUseAsFuel(ItemStack stack) {
-        return SeedMakerBlockEntity.createFuelTimeMap().containsKey(stack.getItem());
-    }
+
 }

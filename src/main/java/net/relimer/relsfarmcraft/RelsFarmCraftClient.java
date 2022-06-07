@@ -9,13 +9,13 @@ import net.relimer.relsfarmcraft.screen.slot.ModScreenHandlers;
 import net.relimer.relsfarmcraft.screen.slot.SeedMakerScreen;
 
 public class RelsFarmCraftClient implements ClientModInitializer {
-    @Override
+      @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ONION_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRAWBERRY_BUSH, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAPE_VINES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAPE_VINES_PLANT, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SEED_MAKER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAPE_JELLY_BLOCK, RenderLayer.getTranslucent());
 
         ScreenRegistry.register(ModScreenHandlers.SEED_MAKER_SCREEN_HANDLER, SeedMakerScreen::new);
     }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "relsfarmcraft:glass_jam_jar"
+    },
+    {
+      "item": "relsfarmcraft:grapes"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ],
+  "result": {
+    "item": "relsfarmcraft:grape_jam"
+  }
+}
