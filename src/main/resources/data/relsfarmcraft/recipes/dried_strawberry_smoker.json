@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "relsfarmcraft:strawberry"
+  },
+  "result": "relsfarmcraft:dried_strawberry",
+  "experience": 0.1,
+  "cookingtime": 100
+}

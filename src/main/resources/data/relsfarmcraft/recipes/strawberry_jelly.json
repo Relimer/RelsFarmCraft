@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "relsfarmcraft:strawberry_jelly_block"
+    }
+  ],
+  "result": {
+    "item": "relsfarmcraft:strawberry_jelly",
+    "count": 9
+  }
+}

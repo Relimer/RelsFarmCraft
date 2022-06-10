@@ -14,18 +14,27 @@ import net.relimer.relsfarmcraft.block.custom.*;
 import net.relimer.relsfarmcraft.item.ModItemGroup;
 
 public class ModBlocks {
+
+    public static final Block SEED_MAKER = registerBlock("seed_maker",
+            new SeedMakerBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().sounds(BlockSoundGroup.COPPER).strength(2f, 4f).requiresTool()), ModItemGroup.RELSFARMCRAFTGROUP);
+
     public static final Block STRAWBERRY_BUSH = registerBlockWithoutItem("strawberry_bush",
             new StrawberryBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).nonOpaque()), ModItemGroup.RELSFARMCRAFTGROUP);
+    public static final Block STRAWBERRY_CAKE = registerBlockWithoutItem("strawberry_cake",
+            new GrapeCakeBlock(FabricBlockSettings.copy(Blocks.CAKE).nonOpaque()), ModItemGroup.RELSFARMCRAFTGROUP);
+    public static final Block STRAWBERRY_JELLY_BLOCK = registerBlock("strawberry_jelly_block",
+            new GrapeJellyBlock(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).nonOpaque().breakInstantly().sounds(BlockSoundGroup.HONEY)), ModItemGroup.RELSFARMCRAFTGROUP);
+
+
     public static final Block GRAPE_VINES = registerBlockWithoutItem("grape_vines",
             new GrapeVinesHeadBlock(AbstractBlock.Settings.of(Material.PLANT).ticksRandomly().noCollision().breakInstantly().sounds(BlockSoundGroup.CAVE_VINES)), ModItemGroup.RELSFARMCRAFTGROUP);
     public static final Block GRAPE_VINES_PLANT = registerBlockWithoutItem("grape_vines_plant",
             new GrapeVinesBodyBlock(AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.CAVE_VINES)), ModItemGroup.RELSFARMCRAFTGROUP);
-    public static final Block SEED_MAKER = registerBlock("seed_maker",
-            new SeedMakerBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().sounds(BlockSoundGroup.COPPER).strength(2f, 4f).requiresTool()), ModItemGroup.RELSFARMCRAFTGROUP);
     public static final Block GRAPE_CAKE = registerBlockWithoutItem("grape_cake",
             new GrapeCakeBlock(FabricBlockSettings.copy(Blocks.CAKE).nonOpaque()), ModItemGroup.RELSFARMCRAFTGROUP);
     public static final Block GRAPE_JELLY_BLOCK = registerBlock("grape_jelly_block",
             new GrapeJellyBlock(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).nonOpaque().breakInstantly().sounds(BlockSoundGroup.HONEY)), ModItemGroup.RELSFARMCRAFTGROUP);
+
 
     private  static  Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

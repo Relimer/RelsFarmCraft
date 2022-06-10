@@ -1,9 +1,9 @@
 {
     "textures": {
-        "particle": "relsfarmcraft:block/food/grape_cake_side",
-        "bottom": "relsfarmcraft:block/food/grape_cake_bottom",
+        "particle": "relsfarmcraft:block/food/cake_side",
+        "bottom": "relsfarmcraft:block/food/cake_bottom",
         "top": "relsfarmcraft:block/food/grape_cake_top",
-        "side": "relsfarmcraft:block/food/grape_cake_side"
+        "side": "relsfarmcraft:block/food/cake_side"
     },
     "elements": [
         {   "from": [ 1, 0, 1 ],

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "wgw",
+    " w "
+  ],
+  "key": {
+    "g": {
+      "item": "relsfarmcraft:strawberry_jam"
+    },
+    "w": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "relsfarmcraft:strawberry_jam_tart"
+  }
+}

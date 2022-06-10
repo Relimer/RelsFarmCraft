@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+    "ggg",
+    "ggg"
+  ],
+  "key": {
+    "g": {
+      "item": "relsfarmcraft:strawberry_jelly"
+    }
+  },
+  "result": {
+    "item": "relsfarmcraft:strawberry_jelly_block"
+  }
+}

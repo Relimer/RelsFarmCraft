@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "relsfarmcraft:grape_jelly_block"
+    }
+  ],
+  "result": {
+    "item": "relsfarmcraft:grape_jelly",
+    "count": 9
+  }
+}

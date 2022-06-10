@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "relsfarmcraft:grapes"
+      "item": "relsfarmcraft:grape_seeds"
     },
     {
       "item": "minecraft:paper"
