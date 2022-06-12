@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.relimer.relsfarmcraft.RelsFarmCraft;
 import net.relimer.relsfarmcraft.entity.client.GrapeSlimeEntityModel;
+import net.relimer.relsfarmcraft.entity.custom.CranberrySlimeEntity;
 import net.relimer.relsfarmcraft.entity.custom.GrapeSlimeEntity;
 import net.relimer.relsfarmcraft.entity.custom.StrawberrySlimeEntity;
 
@@ -21,5 +22,10 @@ public class ModEntityTypes {
     public static final EntityType<StrawberrySlimeEntity> STRAWBERRY_SLIME = Registry.register(
             Registry.ENTITY_TYPE, new Identifier(RelsFarmCraft.MOD_ID, "strawberry_slime"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, StrawberrySlimeEntity::new)
+                    .dimensions(EntityDimensions.changing(2.04f, 2.04f)).build());
+
+    public static final EntityType<CranberrySlimeEntity> CRANBERRY_SLIME = Registry.register(
+            Registry.ENTITY_TYPE, new Identifier(RelsFarmCraft.MOD_ID, "cranberry_slime"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, CranberrySlimeEntity::new)
                     .dimensions(EntityDimensions.changing(2.04f, 2.04f)).build());
 }

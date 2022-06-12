@@ -28,5 +28,9 @@ public class ModFoodComponents {
     public static final FoodComponent STRAWBERRY_TEA = new FoodComponent.Builder().hunger(0).saturationModifier(0.2f).alwaysEdible().statusEffect(new StatusEffectInstance(ModEffects.POISON_IMMUNITY, 600, 0), 1.0f).statusEffect(new StatusEffectInstance(ModEffects.WITHER_IMMUNITY, 600, 0), 1.0f).build();
     public static final FoodComponent SPICED_STRAWBERRY_WINE = new FoodComponent.Builder().hunger(0).saturationModifier(0.5f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300, 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 2), 1.0f).build();
 
+    public static final FoodComponent SPICED_CRANBERRY_JAM = new FoodComponent.Builder().hunger(4).saturationModifier(1.2f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 0), 1.0f).build();
+    public static final FoodComponent CRANBERRY_TEA = new FoodComponent.Builder().hunger(0).saturationModifier(0.2f).alwaysEdible().statusEffect(new StatusEffectInstance(ModEffects.POISON_IMMUNITY, 600, 0), 1.0f).statusEffect(new StatusEffectInstance(ModEffects.WITHER_IMMUNITY, 600, 0), 1.0f).build();
+    public static final FoodComponent SPICED_CRANBERRY_WINE = new FoodComponent.Builder().hunger(0).saturationModifier(0.5f).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300, 1), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 2), 1.0f).build();
+
 }
 

@@ -72,6 +72,39 @@
   "block.relsfarmcraft.grape_vines_plant": "Grape Vines Plant",
 
 
+  "item.relsfarmcraft.cranberries": "Cranberries",
+  "item.relsfarmcraft.fermented_cranberries": "Fermented Cranberries",
+  "item.relsfarmcraft.dried_cranberries": "Dried Cranberries",
+  "item.relsfarmcraft.honeyed_cranberries": "Honeyed Cranberries",
+
+  "item.relsfarmcraft.cranberry_seeds": "Cranberry Seeds",
+
+  "item.relsfarmcraft.cranberry_tea_bag": "Cranberry Tea Bag",
+  "item.relsfarmcraft.cranberry_tea": "Cranberry Tea",
+  "item.relsfarmcraft.cranberry_juice": "Cranberry Juice",
+  "item.relsfarmcraft.cranberry_wine": "Cranberry Wine",
+  "item.relsfarmcraft.spiced_cranberry_wine": "Spiced Cranberry Wine",
+
+  "item.relsfarmcraft.cranberry_jam": "Cranberry Jam",
+  "item.relsfarmcraft.spiced_cranberry_jam": "Spiced Cranberry Jam",
+
+  "item.relsfarmcraft.cranberry_jam_tart": "Cranberry Jam Tart",
+  "item.relsfarmcraft.cranberry_pie": "Cranberry Pie",
+  "block.relsfarmcraft.cranberry_cake": "Cranberry Cake",
+  "item.relsfarmcraft.cranberry_doughnut": "Cranberry Doughnut",
+  "item.relsfarmcraft.dried_cranberry_cookie": "Dried Cranberry Cookie",
+
+  "item.relsfarmcraft.cranberry_sorbet": "Cranberry Sorbet",
+  "item.relsfarmcraft.cranberry_compote": "Cranberry Compote",
+
+  "item.relsfarmcraft.cranberry_jelly": "Cranberry Jelly",
+  "block.relsfarmcraft.cranberry_jelly_block": "Cranberry Jelly Block",
+  "item.relsfarmcraft.cranberry_slime_spawn_egg": "Cranberry Slime Spawn Egg",
+  "entity.relsfarmcraft.cranberry_slime": "Cranberry Slime",
+
+  "block.relsfarmcraft.cranberry_bush": "Cranberry Bush",
+
+
 
   "block.relsfarmcraft.seed_maker": "Seed Maker",
 

@@ -10,6 +10,7 @@ import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.client.render.entity.model.EntityModelLayers;
 import net.relimer.relsfarmcraft.block.ModBlocks;
 import net.relimer.relsfarmcraft.entity.ModEntityTypes;
+import net.relimer.relsfarmcraft.entity.client.CranberrySlimeEntityRenderer;
 import net.relimer.relsfarmcraft.entity.client.GrapeSlimeEntityRenderer;
 import net.relimer.relsfarmcraft.entity.client.StrawberrySlimeEntityRenderer;
 import net.relimer.relsfarmcraft.screen.slot.ModScreenHandlers;
@@ -18,17 +19,24 @@ import net.relimer.relsfarmcraft.screen.slot.SeedMakerScreen;
 public class RelsFarmCraftClient implements ClientModInitializer {
       @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRAWBERRY_BUSH, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAPE_VINES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAPE_VINES_PLANT, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SEED_MAKER, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAPE_JELLY_BLOCK, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRAWBERRY_JELLY_BLOCK, RenderLayer.getTranslucent());
+          BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SEED_MAKER, RenderLayer.getCutout());
+
+
+          BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRAWBERRY_BUSH, RenderLayer.getCutout());
+          BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRAWBERRY_JELLY_BLOCK, RenderLayer.getTranslucent());
+          EntityRendererRegistry.register(ModEntityTypes.STRAWBERRY_SLIME, StrawberrySlimeEntityRenderer::new);
+
+          BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAPE_VINES, RenderLayer.getCutout());
+          BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAPE_VINES_PLANT, RenderLayer.getCutout());
+          BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAPE_JELLY_BLOCK, RenderLayer.getTranslucent());
+          EntityRendererRegistry.register(ModEntityTypes.GRAPE_SLIME, GrapeSlimeEntityRenderer::new);
+
+          BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CRANBERRY_BUSH, RenderLayer.getCutout());
+          BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CRANBERRY_JELLY_BLOCK, RenderLayer.getTranslucent());
+          EntityRendererRegistry.register(ModEntityTypes.CRANBERRY_SLIME, CranberrySlimeEntityRenderer::new);
 
         ScreenRegistry.register(ModScreenHandlers.SEED_MAKER_SCREEN_HANDLER, SeedMakerScreen::new);
 
-        EntityRendererRegistry.register(ModEntityTypes.GRAPE_SLIME, GrapeSlimeEntityRenderer::new);
-        EntityRendererRegistry.register(ModEntityTypes.STRAWBERRY_SLIME, StrawberrySlimeEntityRenderer::new);
     }
 }
 

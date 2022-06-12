@@ -35,6 +35,13 @@ public class ModBlocks {
     public static final Block GRAPE_JELLY_BLOCK = registerBlock("grape_jelly_block",
             new GrapeJellyBlock(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).nonOpaque().breakInstantly().sounds(BlockSoundGroup.HONEY)), ModItemGroup.RELSFARMCRAFTGROUP);
 
+    public static final Block CRANBERRY_BUSH = registerBlockWithoutItem("cranberry_bush",
+            new StrawberryBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).nonOpaque()), ModItemGroup.RELSFARMCRAFTGROUP);
+    public static final Block CRANBERRY_CAKE = registerBlockWithoutItem("cranberry_cake",
+            new GrapeCakeBlock(FabricBlockSettings.copy(Blocks.CAKE).nonOpaque()), ModItemGroup.RELSFARMCRAFTGROUP);
+    public static final Block CRANBERRY_JELLY_BLOCK = registerBlock("cranberry_jelly_block",
+            new GrapeJellyBlock(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).nonOpaque().breakInstantly().sounds(BlockSoundGroup.HONEY)), ModItemGroup.RELSFARMCRAFTGROUP);
+
 
     private  static  Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

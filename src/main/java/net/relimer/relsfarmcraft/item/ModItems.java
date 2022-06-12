@@ -127,6 +127,58 @@ public class ModItems {
             new SpawnEggItem(ModEntityTypes.GRAPE_SLIME, 0x634892, 0x493173,
                     new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP)));
 
+
+
+    public static final Item CRANBERRIES = registerItem("cranberries",
+            new Item(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.BERRY))/*.useOnEntity(new ItemStack(ModItems.GRAPES), PlayerEntity, LivingEntity, Hand.MAIN_HAND)*/);
+    public static final Item FERMENTED_CRANBERRIES = registerItem("fermented_cranberries",
+            new Item(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP)));
+    public static final Item DRIED_CRANBERRIES = registerItem("dried_cranberries",
+            new Item(new FabricItemSettings().food(ModFoodComponents.DRIED_BERRY).group(ModItemGroup.RELSFARMCRAFTGROUP)));
+    public static final Item HONEYED_CRANBERRIES = registerItem("honeyed_cranberries",
+            new HoneyedItem(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.HONEYED_BERRY)));
+
+    public static final Item CRANBERRY_SEEDS = registerItem("cranberry_seeds",
+            new AliasedBlockItem(ModBlocks.CRANBERRY_BUSH, new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP)));
+    public static final Item CRANBERRY_TEA_BAG = registerItem("cranberry_tea_bag",
+            new Item(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP)));
+
+    public static final Item CRANBERRY_JAM = registerItem("cranberry_jam",
+            new ConsumableJamJarItem(new FabricItemSettings().recipeRemainder(GLASS_JAM_JAR).food(ModFoodComponents.BERRY_JAM).group(ModItemGroup.RELSFARMCRAFTGROUP).maxCount(16)));
+    public static final Item SPICED_CRANBERRY_JAM = registerItem("spiced_cranberry_jam",
+            new ConsumableJamJarItem(new FabricItemSettings().recipeRemainder(GLASS_JAM_JAR).food(ModFoodComponents.SPICED_CRANBERRY_JAM).group(ModItemGroup.RELSFARMCRAFTGROUP).maxCount(16)));
+
+    public static final Item CRANBERRY_JAM_TART = registerItem("cranberry_jam_tart",
+            new Item(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.BERRY_JAM_TART)));
+    public static final Item CRANBERRY_PIE = registerItem("cranberry_pie",
+            new Item(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.BERRY_PIE)));
+    public static final Item CRANBERRY_CAKE = registerItem("cranberry_cake",
+            new BlockItem(ModBlocks.CRANBERRY_CAKE, new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).maxCount(1)));
+    public static final Item CRANBERRY_DOUGHNUT = registerItem("cranberry_doughnut",
+            new Item(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.BERRY_DOUGHNUT)));
+    public static final Item DRIED_CRANBERRY_COOKIE = registerItem("dried_cranberry_cookie",
+            new Item(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.DRIED_BERRY_COOKIE)));
+
+    public static final Item CRANBERRY_SORBET = registerItem("cranberry_sorbet",
+            new StewItem(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.BERRY_SORBET).maxCount(1)));
+    public static final Item CRANBERRY_COMPOTE = registerItem("cranberry_compote",
+            new StewItem(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.BERRY_COMPOTE).maxCount(1)));
+
+    public static final Item CRANBERRY_JUICE = registerItem("cranberry_juice",
+            new DrinkableBottleItem(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.BERRY_JUICE).maxCount(1)));
+    public static final Item CRANBERRY_TEA = registerItem("cranberry_tea",
+            new DrinkableBottleItem(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.CRANBERRY_TEA).maxCount(1)));
+    public static final Item CRANBERRY_WINE = registerItem("cranberry_wine",
+            new DrinkableBottleItem(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.BERRY_WINE).maxCount(1)));
+    public static final Item SPICED_CRANBERRY_WINE = registerItem("spiced_cranberry_wine",
+            new DrinkableBottleItem(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.SPICED_CRANBERRY_WINE).maxCount(1)));
+
+    public static final Item CRANBERRY_JELLY = registerItem("cranberry_jelly",
+            new HungerItem(new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP).food(ModFoodComponents.BERRY_JELLY)));
+    public static final Item CRANBERRY_SLIME_SPAWN_EGG = registerItem("cranberry_slime_spawn_egg",
+            new SpawnEggItem(ModEntityTypes.CRANBERRY_SLIME, 0xff6f88, 0xc5304a,
+                    new FabricItemSettings().group(ModItemGroup.RELSFARMCRAFTGROUP)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(RelsFarmCraft.MOD_ID, name), item);
     }

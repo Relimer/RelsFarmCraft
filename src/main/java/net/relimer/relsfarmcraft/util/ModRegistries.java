@@ -13,5 +13,6 @@ public class ModRegistries {
     private static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(ModEntityTypes.GRAPE_SLIME, GrapeSlimeEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntityTypes.STRAWBERRY_SLIME, StrawberrySlimeEntity.setAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntityTypes.CRANBERRY_SLIME, StrawberrySlimeEntity.setAttributes());
     }
 }
